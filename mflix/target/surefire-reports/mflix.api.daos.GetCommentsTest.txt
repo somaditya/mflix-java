@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.GetCommentsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.889 s <<< FAILURE! - in mflix.api.daos.GetCommentsTest
+testGetMovieComments(mflix.api.daos.GetCommentsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+
+testInsertedComment(mflix.api.daos.GetCommentsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+
+testCommentsMovieIdNonExisting(mflix.api.daos.GetCommentsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+
