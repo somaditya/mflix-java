@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.MigrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in mflix.api.daos.MigrationTest
+testAllDocumentsIMDBRatingNumber(mflix.api.daos.MigrationTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+	at mflix.api.daos.MigrationTest.setup(MigrationTest.java:23)
+
+testAllDocumentsUpdateDateIsDateType(mflix.api.daos.MigrationTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+	at mflix.api.daos.MigrationTest.setup(MigrationTest.java:23)
+
