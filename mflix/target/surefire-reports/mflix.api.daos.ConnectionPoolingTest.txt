@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: mflix.api.daos.ConnectionPoolingTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in mflix.api.daos.ConnectionPoolingTest
-testConnectionPoolSize(mflix.api.daos.ConnectionPoolingTest)  Time elapsed: 0.034 s  <<< ERROR!
-java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-	at mflix.api.daos.ConnectionPoolingTest.setUp(ConnectionPoolingTest.java:16)
-

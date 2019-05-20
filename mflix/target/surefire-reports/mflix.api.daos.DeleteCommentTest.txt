@@ -1,34 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.DeleteCommentTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 2.007 s <<< FAILURE! - in mflix.api.daos.DeleteCommentTest
-testDeleteInvalidCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.105 s <<< FAILURE! - in mflix.api.daos.DeleteCommentTest
+testDeleteInvalidCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.2 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 
-testDeleteIncorrectCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-
-testDeleteOfOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-
-testDeleteNotOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-
-testDeleteNonExistingComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoClient' defined in mflix.config.MongoDBConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongoClient' threw exception; nested exception is java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
-Caused by: java.lang.IllegalArgumentException: An SRV host name 'YOUR_CLUSTER_URI' was provided that does not contain at least three parts. It must contain a hostname, domain name and a top level domain.
+testDeleteOfOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.19 s  <<< FAILURE!
+java.lang.AssertionError: Should be able to delete owns comments: Check your deleteComment() method
+	at mflix.api.daos.DeleteCommentTest.testDeleteOfOwnedComment(DeleteCommentTest.java:57)
 
