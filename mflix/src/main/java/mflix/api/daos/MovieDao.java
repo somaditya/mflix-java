@@ -11,8 +11,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+
+import static com.mongodb.client.model.Filters.all;
 
 @Component
 public class MovieDao extends AbstractMFlixDao {
@@ -118,12 +121,12 @@ public class MovieDao extends AbstractMFlixDao {
    */
   public List<Document> getMoviesByCountry(String... country) {
 
-    Bson queryFilter = new Document();
-    Bson projection = new Document();
+    Bson queryFilter = all("countries", country);
+    Bson projection = new Document("title", 1).append("_id", 0);
     //TODO> Ticket: Projection - implement the query and projection required by the unit test
 
     List<Document> movies = new ArrayList<>();
-
+    moviesCollection.find(queryFilter).projection(projection).into(movies);
     return movies;
   }
 
@@ -163,8 +166,8 @@ public class MovieDao extends AbstractMFlixDao {
    * @return List of documents sorted by sortKey that match the cast selector.
    */
   public List<Document> getMoviesByCast(String sortKey, int limit, int skip, String... cast) {
-    Bson castFilter = null;
-    Bson sort = null;
+    Bson castFilter = Filters.in("cast", cast);
+    Bson sort = Sorts.descending(sortKey);
     //TODO> Ticket: Subfield Text Search - implement the expected cast
     // filter and sort
     List<Document> movies = new ArrayList<>();
