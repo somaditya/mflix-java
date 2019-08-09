@@ -269,7 +269,16 @@ Creating an M0 free tier cluster **mflix**:
   .. image:: https://s3.amazonaws.com/university-courses/m220/cluster_application_user.png
 
 
-8. When the user is created, and the cluster is deployed, you can test the setup
+8. When the user is created, and the cluster deployed, you have the option to
+   ``Load Sample Dataset``. This will load the Atlas sample dataset, containing
+   the MFlix database, into your cluster:
+
+   .. image:: https://s3.amazonaws.com/university-courses/m220/load_sample_dataset.png
+
+    **Note: The MFlix database in the Sample Dataset is called "sample_mflix".**
+
+
+9. Now you can test the setup
    by connecting via the ``mongo`` shell. You can find instructions to connect
    in the *Connect* section of the cluster dashboard:
 
@@ -291,8 +300,10 @@ Creating an M0 free tier cluster **mflix**:
   cluster is configured and reachable from your local workstation.
 
 
-Importing Data
-~~~~~~~~~~~~~~
+Importing Data (Optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Note: if you used Load Sample Dataset, you can skip this step.**
 
 The ``mongorestore`` command necessary to import the data is located below.
 Copy the command and use the *Atlas SRV* string to import the data (including
