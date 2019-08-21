@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.ConnectionTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.988 s - in mflix.api.daos.ConnectionTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.403 s <<< FAILURE! - in mflix.api.daos.ConnectionTest
+testMoviesCount(mflix.api.daos.ConnectionTest)  Time elapsed: 0.216 s  <<< FAILURE!
+java.lang.AssertionError: Check your connection string expected:<23539> but was:<45993>
+	at mflix.api.daos.ConnectionTest.testMoviesCount(ConnectionTest.java:44)
+

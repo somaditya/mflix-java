@@ -42,12 +42,13 @@ public class TimeoutsTest extends TicketTest {
 
   @Test
   public void testConfiguredWtimeout() {
-    WriteConcern wc = this.movieDao.mongoClient.getDatabase("mflix").getWriteConcern();
+    WriteConcern wc =
+            this.movieDao.mongoClient.getDatabase(databaseName).getWriteConcern();
 
     Assert.assertNotNull(wc);
     int actual = wc.getWTimeout(TimeUnit.MILLISECONDS);
     int expected = 2500;
-    Assert.assertEquals("Configured `wtimeout` not set has expected", expected, actual);
+    Assert.assertEquals("Configured `wtimeoutms` not set has expected", expected, actual);
   }
 
   @Test

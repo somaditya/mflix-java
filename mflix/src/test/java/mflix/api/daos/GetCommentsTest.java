@@ -42,14 +42,14 @@ public class GetCommentsTest extends TicketTest {
             .append("date", new Date())
             .append("name", "Yulia");
 
-    mongoClient.getDatabase("mflix").getCollection("comments").insertOne(comment);
+    mongoClient.getDatabase(databaseName).getCollection("comments").insertOne(comment);
     commentId = comment.getObjectId("_id").toHexString();
   }
 
   @After
   public void tearDown(){
     Document filter = new Document("_id", commentId);
-    mongoClient.getDatabase("mflix").getCollection("comments").deleteMany(filter);
+    mongoClient.getDatabase(databaseName).getCollection("comments").deleteMany(filter);
   }
 
   @Before
@@ -62,16 +62,16 @@ public class GetCommentsTest extends TicketTest {
   @SuppressWarnings("unchecked")
   @Test
   public void testGetMovieComments() {
-    String movieId = "573a1390f29313caabcd418c";
+    String movieId = "573a13b5f29313caabd42c2f";
     Document movieDocument = dao.getMovie(movieId);
     Assert.assertNotNull("Should not return null. Check getMovie()", movieDocument);
 
     List<Document> commentDocs = (List<Document>) movieDocument.get("comments");
-    int expectedSize = 2;
+    int expectedSize = 147;
     Assert.assertEquals(
         "Comments list size does not match expected", expectedSize, commentDocs.size());
 
-    String expectedName = "Patricia Good";
+    String expectedName = "Arya Stark";
     Assert.assertEquals(
         "Expected `name` field does match: check your " + "getMovie() comments sort order.",
         expectedName,

@@ -39,13 +39,13 @@ public class UserPreferencesTest extends TicketTest {
     this.email = "user@preferences.email";
     Document userDoc = new Document("email", email);
     userDoc.put("name", "Preferencial");
-    mongoClient.getDatabase("mflix").getCollection("users").insertOne(userDoc);
+    mongoClient.getDatabase(databaseName).getCollection("users").insertOne(userDoc);
   }
 
   @After
   public void tearDown() {
     Document userDoc = new Document("email", email);
-    mongoClient.getDatabase("mflix").getCollection("users").deleteOne(userDoc);
+    mongoClient.getDatabase(databaseName).getCollection("users").deleteOne(userDoc);
   }
 
   @Test

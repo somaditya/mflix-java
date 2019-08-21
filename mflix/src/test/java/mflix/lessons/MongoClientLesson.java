@@ -10,7 +10,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -22,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @see org.bson.codecs.Codec
  */
 @SpringBootTest
-public class MongoClientLesson extends AbstractLesson{
+public class MongoClientLesson extends AbstractLesson {
 
   private MongoClient mongoClient;
 
@@ -30,14 +29,11 @@ public class MongoClientLesson extends AbstractLesson{
 
   private MongoCollection<Document> collection;
 
-  private String uri = getProperty("spring.mongodb.uri");
+  private String uri = "<YOUR SRV STRING from the application.properties file>";
 
   private Document document;
 
   private Bson bson;
-
-  public MongoClientLesson() throws IOException {
-  }
 
   @Test
   public void MongoClientInstance() {

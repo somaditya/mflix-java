@@ -1,224 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e6a9f19-9a41-4291-9e5a-4838a773d4c6" name="Default Changelist" comment="">
+    <list default="true" id="f0894dfe-51cc-4463-b888-72260c994082" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mflix.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mflix/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mflix/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mflix/Migrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mflix/Migrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mflix/api/daos/AbstractMFlixDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/AbstractMFlixDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/precache-manifest.47500537ecad22511fbfd963bd4feedb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/precache-manifest.a96700783f1f01796ec4b579c066860b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.34acb202.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.34acb202.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.5feebe7c.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.5feebe7c.chunk.css~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.5feebe7c.chunk.css~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.5feebe7c.chunk.css~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/css/main.5feebe7c.chunk.css~HEAD_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/1.85042e97.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/1.85042e97.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/2.7126eee3.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/2.7126eee3.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.346367b8.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.346367b8.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.85b5b3aa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.85b5b3aa.chunk.js~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.85b5b3aa.chunk.js~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.85b5b3aa.chunk.js~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/main.85b5b3aa.chunk.js~HEAD_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/build/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/FacetedSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/FacetedSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/GetCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/GetCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/MigrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/MigrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/PagingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/PagingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TextAndSubfieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TextAndSubfieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TimeoutsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TimeoutsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UpdateCreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UpdateCreateCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserPreferencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserPreferencesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicReads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicReads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mflix/lessons/MongoClientLesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/MongoClientLesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/precache-manifest.47500537ecad22511fbfd963bd4feedb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/precache-manifest.a96700783f1f01796ec4b579c066860b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.34acb202.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.34acb202.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.5feebe7c.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.5feebe7c.chunk.css~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.5feebe7c.chunk.css~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.5feebe7c.chunk.css~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/css/main.5feebe7c.chunk.css~HEAD_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/1.85042e97.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/1.85042e97.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/2.7126eee3.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/2.7126eee3.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.346367b8.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.346367b8.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.85b5b3aa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.85b5b3aa.chunk.js~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.85b5b3aa.chunk.js~22eb1df58f57b6e6f11bc8d86ec4ef0b8b1806a7_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.85b5b3aa.chunk.js~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/main.85b5b3aa.chunk.js~HEAD_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/Migrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/Migrator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/controllers/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/controllers/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/MovieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/daos/AbstractMFlixDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/AbstractMFlixDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefire13698969586672857035tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefire_08485982761433784972tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefirebooter12465487883314700602.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDocumentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDocumentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/services/MoviesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/MoviesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/services/TokenAuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/TokenAuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mflix/api/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-05-21T21-50-59_161.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-06-19T02-56-30_841.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ConnectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ConnectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.DeleteCommentTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.DeleteCommentTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.FacetedSearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.FacetedSearchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.HandlingErrorsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.HandlingErrorsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ProjectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ProjectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.TimeoutsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.TimeoutsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UserReportTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UserReportTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ConnectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ConnectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.DeleteCommentTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.DeleteCommentTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.FacetedSearchTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.FacetedSearchTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.HandlingErrorsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.HandlingErrorsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ProjectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ProjectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.TimeoutsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.TimeoutsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UserReportTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UserReportTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ConnectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/DeleteCommentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/DeleteCommentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/FacetedSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/FacetedSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/GetCommentsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/GetCommentsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/MigrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/MigrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/PagingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/PagingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ProjectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ProjectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TextAndSubfieldTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TextAndSubfieldTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TimeoutsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TimeoutsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UpdateCreateCommentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UpdateCreateCommentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserPreferencesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserPreferencesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserReportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserReportTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/AbstractLesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/AbstractLesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/BasicReads.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/BasicReads.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ChangeStreams.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ChangeStreams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/CursorMethodsAndAggEquivalents.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/CursorMethodsAndAggEquivalents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ErrorHandling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ErrorHandling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/MongoClientLesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/MongoClientLesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/UsingAggregationBuilders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/UsingAggregationBuilders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ActorCodec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ActorCodec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ChangeStreamsInsertAndUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ChangeStreamsInsertAndUpdate.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CheckStyle-IDEA-workspace">
-    <option name="configuration">
-      <map>
-        <entry key="last-active-plugin-version" value="5.22.1" />
-      </map>
-    </option>
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/TextAndSubfieldTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="168" column="22" lean-forward="true" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getMovi</find>
-      <find>projectio</find>
-      <find>sort</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/mflix/lessons/MongoClientLesson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
-  </component>
+  <component name="ProjectId" id="1PjCWRAGp8eTKxUojmGbTmu7uEn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <autoscrollFromSource Scope="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="daos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="daos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lessons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mflix" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="mflix" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mflix" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lessons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,31 +240,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TextAndSubfieldTest">
-    <configuration name="RunApp" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mflix.Application" />
+  <component name="RunManager" selected="JUnit.PagingTest">
+    <configuration name="All in mflix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mflix" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicReads.testFindManySalmaHayek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mflix" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mflix.lessons.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mflix.lessons" />
-      <option name="MAIN_CLASS_NAME" value="mflix.lessons.BasicReads" />
-      <option name="METHOD_NAME" value="testFindManySalmaHayek" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProjectionTest.testFindMoviesByCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mflix" />
       <extension name="coverage">
         <pattern>
@@ -265,29 +258,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mflix.api.daos" />
-      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.ProjectionTest" />
-      <option name="METHOD_NAME" value="testFindMoviesByCountry" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextAndSubfieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mflix" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mflix.api.daos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mflix.api.daos" />
-      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.TextAndSubfieldTest" />
+      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.ConnectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAndSubfieldTest.testMultipleGenreSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PagingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mflix" />
       <extension name="coverage">
         <pattern>
@@ -296,71 +273,17 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mflix.api.daos" />
-      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.TextAndSubfieldTest" />
-      <option name="METHOD_NAME" value="testMultipleGenreSearch" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.PagingTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAndSubfieldTest.testSearchByCast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mflix" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mflix.api.daos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mflix.api.daos" />
-      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.TextAndSubfieldTest" />
-      <option name="METHOD_NAME" value="testSearchByCast" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mflix [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="install" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.RunApp" />
-      <item itemvalue="Maven.mflix [clean,install]" />
-      <item itemvalue="JUnit.BasicReads.testFindManySalmaHayek" />
-      <item itemvalue="JUnit.ProjectionTest.testFindMoviesByCountry" />
-      <item itemvalue="JUnit.TextAndSubfieldTest.testSearchByCast" />
-      <item itemvalue="JUnit.TextAndSubfieldTest.testMultipleGenreSearch" />
-      <item itemvalue="JUnit.TextAndSubfieldTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TextAndSubfieldTest" />
-        <item itemvalue="JUnit.TextAndSubfieldTest.testSearchByCast" />
-        <item itemvalue="JUnit.TextAndSubfieldTest.testMultipleGenreSearch" />
-        <item itemvalue="JUnit.ProjectionTest.testFindMoviesByCountry" />
-        <item itemvalue="JUnit.BasicReads.testFindManySalmaHayek" />
+        <item itemvalue="JUnit.PagingTest" />
+        <item itemvalue="JUnit.ConnectionTest" />
+        <item itemvalue="JUnit.All in mflix" />
       </list>
     </recent_temporary>
   </component>
@@ -369,291 +292,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3e6a9f19-9a41-4291-9e5a-4838a773d4c6" name="Default Changelist" comment="" />
-      <created>1558106565661</created>
+      <changelist id="f0894dfe-51cc-4463-b888-72260c994082" name="Default Changelist" comment="" />
+      <created>1566378149148</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558106565661</updated>
+      <updated>1566378149148</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TextAndSubfieldTest_testSearchByCast - 2019.06.19 at 05h 28m 56s.xml">
-      <configuration name="TextAndSubfieldTest.testSearchByCast" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest_testSearchByCast - 2019.06.19 at 05h 30m 08s.xml">
-      <configuration name="TextAndSubfieldTest.testSearchByCast" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest_testSearchByCast - 2019.06.19 at 05h 37m 29s.xml">
-      <configuration name="TextAndSubfieldTest.testSearchByCast" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest_testMultipleGenreSearch - 2019.06.19 at 05h 41m 05s.xml">
-      <configuration name="TextAndSubfieldTest.testMultipleGenreSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest - 2019.06.19 at 05h 43m 27s.xml">
-      <configuration name="TextAndSubfieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest - 2019.06.19 at 05h 45m 59s.xml">
-      <configuration name="TextAndSubfieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest - 2019.06.19 at 05h 48m 56s.xml">
-      <configuration name="TextAndSubfieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest - 2019.06.19 at 05h 49m 18s.xml">
-      <configuration name="TextAndSubfieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest - 2019.06.19 at 05h 49m 57s.xml">
-      <configuration name="TextAndSubfieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextAndSubfieldTest_testSearchByCast - 2019.06.19 at 05h 50m 01s.xml">
-      <configuration name="TextAndSubfieldTest.testSearchByCast" configurationId="JUnit" />
-    </history-entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="745" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24773414" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924472" visible="true" weight="0.43644717" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.48280802" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007553" side_tool="true" weight="0.95702004" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924962" />
-      <window_info anchor="bottom" id="CheckStyle" order="11" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/services/MoviesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/models/AbstractMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mflix/Migrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mflix/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1106">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.9.1/mongodb-driver-core-3.9.1.jar!/com/mongodb/Block.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/MongoClientLesson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3441">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/TicketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/AbstractLesson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/QueryBuilders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="210" column="21" lean-forward="true" selection-start-line="210" selection-start-column="21" selection-end-line="210" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/ProjectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.9.1/mongodb-driver-core-3.9.1.jar!/com/mongodb/client/model/Filters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/BasicReads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/3.9.1/bson-3.9.1.jar!/org/bson/codecs/configuration/CodecCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-sync/3.9.1/mongodb-driver-sync-3.9.1.jar!/com/mongodb/client/internal/MongoIterableImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#2030#2031#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2955#3075#0" expanded="true" />
-            <element signature="e#3074#3075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/utils/ActorCodec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-951">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/UsingPojoLesson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="288" column="11" selection-start-line="288" selection-start-column="11" selection-end-line="288" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="132" column="23" lean-forward="true" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-sync/3.9.1/mongodb-driver-sync-3.9.1.jar!/com/mongodb/client/MongoIterable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/TextAndSubfieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="168" column="22" lean-forward="true" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mflix$All_in_mflix.ic" NAME="All in mflix Coverage Results" MODIFIED="1566378220336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

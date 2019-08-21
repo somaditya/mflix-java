@@ -46,7 +46,7 @@ public class DeleteCommentTest extends TicketTest {
     commentDoc.append("text", "some text");
     commentDoc.append("name", "user name");
 
-    this.mongoClient.getDatabase("mflix").getCollection("comments").insertOne(commentDoc);
+    this.mongoClient.getDatabase(databaseName).getCollection("comments").insertOne(commentDoc);
 
     commentId = commentDoc.getObjectId("_id").toHexString();
   }
@@ -91,6 +91,6 @@ public class DeleteCommentTest extends TicketTest {
   @After
   public void tearDown() {
     Bson deleteFiler = Filters.eq("_id", new ObjectId(this.commentId));
-    this.mongoClient.getDatabase("mflix").getCollection("comments").deleteOne(deleteFiler);
+    this.mongoClient.getDatabase(databaseName).getCollection("comments").deleteOne(deleteFiler);
   }
 }

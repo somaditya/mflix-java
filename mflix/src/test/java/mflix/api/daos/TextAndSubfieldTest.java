@@ -55,7 +55,6 @@ public class TextAndSubfieldTest extends TicketTest {
 
     int actualMoviesCount = 0;
     for (Document doc : cursor) {
-      System.out.println(doc);
       actualMoviesCount++;
     }
 
@@ -67,7 +66,7 @@ public class TextAndSubfieldTest extends TicketTest {
 
   @Test
   public void testTextSearchCount() {
-    long expected = 326;
+    long expected = 151;
     String keywords = "dress";
 
     Assert.assertEquals(
@@ -91,7 +90,6 @@ public class TextAndSubfieldTest extends TicketTest {
     int expectedCount = 1;
     int actualCount = 0;
     for (Document doc : cursor) {
-      System.out.println(doc);
       actualCount++;
     }
     Assert.assertEquals(
@@ -106,11 +104,10 @@ public class TextAndSubfieldTest extends TicketTest {
     cast.add("Elon Musk");
     cast.add("Robert Redford");
     cast.add("Julia Roberts");
-
+    int expectedCount = 62;
     Iterable<Document> cursor = dao.getMoviesByCast(sortKey, 33, 0, cast.toArray(new String[0]));
     int numMovies = 0;
     for (Document doc : cursor) {
-      System.out.println(doc);
       numMovies++;
     }
 
@@ -119,7 +116,7 @@ public class TextAndSubfieldTest extends TicketTest {
 
     Assert.assertEquals(
         "Total count of movies with cast does not match. Check your query filter",
-        75,
+        expectedCount,
         dao.getCastSearchCount(cast.toArray(new String[0])));
   }
 
@@ -128,36 +125,38 @@ public class TextAndSubfieldTest extends TicketTest {
     ArrayList<String> genres = new ArrayList<>();
     genres.add("Action");
     genres.add("Adventure");
+    int expectedCount = 3805;
     int limit = 25;
     int skip = 0;
     String[] garray = genres.toArray(new String[0]);
     Iterable<Document> movies = dao.getMoviesByGenre(sortKey, limit, skip, garray);
     int numMovies = 0;
     for (Document doc : movies) {
-      System.out.println(doc);
       numMovies++;
     }
 
-    assertTrue("getMoviesByGenre should be returning documents", numMovies > 0);
-    assertEquals(8385, dao.getGenresSearchCount(garray));
+    Assert.assertTrue("getMoviesByGenre should be returning documents",
+            numMovies > 0);
+    Assert.assertEquals(expectedCount, dao.getGenresSearchCount(garray));
   }
 
   @Test
   public void testGenreSearch() {
     String genre = "Action";
+    int expectedCount = 2539;
     int limit = 20;
     int skip = 0;
     Iterable<Document> movies = dao.getMoviesByGenre(sortKey, limit, skip, genre);
     int numMovies = 0;
     for (Document doc : movies) {
-      System.out.println(doc);
       numMovies++;
     }
 
-    assertTrue("getMoviesByGenre should be returning documents", numMovies > 0);
-    assertEquals(
+    Assert.assertTrue("getMoviesByGenre should be returning documents",
+            numMovies > 0);
+    Assert.assertEquals(
         "Number of total documents does not match expected. Check your dataset",
-        5917,
+            expectedCount,
         dao.getGenresSearchCount(genre));
   }
 }

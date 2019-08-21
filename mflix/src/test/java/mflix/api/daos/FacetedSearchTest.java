@@ -64,7 +64,7 @@ public class FacetedSearchTest extends TicketTest {
   @Test
   public void testFacetedSearchPaging() {
 
-    String cast = "Tom Hanks";
+    String cast = "Paul Newman";
 
     List<Document> moviesInfo = dao.getMoviesCastFaceted(20, 2 * 20, cast);
 
@@ -73,47 +73,47 @@ public class FacetedSearchTest extends TicketTest {
     ArrayList movies = (ArrayList<Document>) moviesInfo.get(0).get("movies");
     assertEquals(
         "Check your movies sub-pipeline on getMoviesFaceted() for multiple cast in paged results",
-        11,
+        4,
         movies.size());
 
     ArrayList rating = (ArrayList<Document>) moviesInfo.get(0).get("rating");
     assertEquals(
         "Check your $bucket rating sub-pipeline on getMoviesFaceted() in multiple cast in paged results",
-        3,
+        1,
         rating.size());
 
     ArrayList runtime = (ArrayList<Document>) moviesInfo.get(0).get("runtime");
     assertEquals(
         "Check your $bucket runtime sub-pipeline on getMoviesFaceted() in paged results",
-        5,
+        3,
         runtime.size());
   }
 
   @Test
   public void testFacetedMultipleCast() {
 
-    String[] cast = {"Brad Pitt", "Meryl Streep"};
+    String[] cast = {"Brad Pitt", "Angelina Jolie"};
 
-    List<Document> moviesInfo = dao.getMoviesCastFaceted(20, 4 * 20, cast);
+    List<Document> moviesInfo = dao.getMoviesCastFaceted(20, 2 * 20, cast);
 
     assertEquals("Should return a list of one faceted document", 1, moviesInfo.size());
 
     ArrayList movies = (ArrayList<Document>) moviesInfo.get(0).get("movies");
     assertEquals(
         "Check your movies sub-pipeline on getMoviesFaceted() in multiple cast for multiple cast",
-        9,
+        16,
         movies.size());
 
     ArrayList rating = (ArrayList<Document>) moviesInfo.get(0).get("rating");
     assertEquals(
         "Check your $bucket rating sub-pipeline on getMoviesFaceted() in multiple cast",
-        2,
+        3,
         rating.size());
 
     ArrayList runtime = (ArrayList<Document>) moviesInfo.get(0).get("runtime");
     assertEquals(
         "Check your $bucket runtime sub-pipeline on getMoviesFaceted() in multiple cast",
-        3,
+        5,
         runtime.size());
   }
 }

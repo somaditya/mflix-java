@@ -40,7 +40,7 @@ public class ConnectionTest extends TicketTest {
 
   @Test
   public void testMoviesCount() {
-    long expected = 45993;
+    long expected =   23539;
     Assert.assertEquals("Check your connection string", expected, dao.getMoviesCount());
   }
 
@@ -48,16 +48,15 @@ public class ConnectionTest extends TicketTest {
   public void testConnectionFindsDatabase() {
 
     MongoClient mc = MongoClients.create(mongoUri);
-    String expectedDBName = "mflix";
     boolean found = false;
     for (String dbname : mc.listDatabaseNames()) {
-      if (expectedDBName.equals(dbname)) {
+      if (databaseName.equals(dbname)) {
         found = true;
         break;
       }
     }
     Assert.assertTrue(
-        "We can connect to MongoDB, but couldn't find `mflix` database. Check the restore step",
+        "We can connect to MongoDB, but couldn't find expected database. Check the restore step",
         found);
   }
 
@@ -69,7 +68,7 @@ public class ConnectionTest extends TicketTest {
     List<String> collectionNames = Arrays.asList("comments", "movies", "sessions", "users");
 
     int found = 0;
-    for (String colName : mc.getDatabase("mflix").listCollectionNames()) {
+    for (String colName : mc.getDatabase(databaseName).listCollectionNames()) {
 
       if (collectionNames.contains(colName)) {
         found++;

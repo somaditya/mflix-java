@@ -90,9 +90,9 @@ public class UsingAggregationBuilders extends AbstractLesson {
     iterable.into(builderMatchStageResults);
 
     /*
-    Which should produce a list of 152 movies produced in Portugal.
+    Which should produce a list of 115 movies produced in Portugal.
      */
-    Assert.assertEquals(152, builderMatchStageResults.size());
+    Assert.assertEquals(115, builderMatchStageResults.size());
   }
 
   @Test

@@ -48,7 +48,7 @@ public class UserReportTest extends TicketTest {
         mostActiveCommenter,
         mostActive.get(0).getId());
 
-    int expectedNumComments = 909;
+    int expectedNumComments = 331;
     Assert.assertEquals(
         "The top comments count does not match.",
         expectedNumComments,

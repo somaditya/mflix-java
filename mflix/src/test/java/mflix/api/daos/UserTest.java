@@ -46,14 +46,14 @@ public class UserTest extends TicketTest {
     this.testUser.setHashedpw("somehashedpw");
     this.jwt = "somemagicjwt";
     mongoClient
-        .getDatabase("mflix")
+        .getDatabase(databaseName)
         .getCollection("users")
         .deleteOne(new Document("email", "log@out.com"));
   }
 
   @After
   public void tearDownClass() {
-    MongoDatabase db = mongoClient.getDatabase("mflix");
+    MongoDatabase db = mongoClient.getDatabase(databaseName);
     db.getCollection("users").deleteMany(new Document("email", email));
     db.getCollection("users").deleteMany(new Document("email", "log@out.com"));
     db.getCollection("sessions").deleteMany(new Document("user_id", "log@out" +
@@ -90,9 +90,9 @@ public class UserTest extends TicketTest {
   public void testLogout() {
     String email = "log@out.com";
     Document logOutUser = new Document("email", email);
-    mongoClient.getDatabase("mflix").getCollection("users").insertOne(logOutUser);
+    mongoClient.getDatabase(databaseName).getCollection("users").insertOne(logOutUser);
     Document logOutUserSession = new Document("user_id", email);
-    mongoClient.getDatabase("mflix").getCollection("sessions").insertOne(logOutUserSession);
+    mongoClient.getDatabase(databaseName).getCollection("sessions").insertOne(logOutUserSession);
 
     assertTrue(
         "Should have deleted user from sessions collection - check your logout method",

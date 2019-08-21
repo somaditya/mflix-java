@@ -53,7 +53,7 @@ public abstract class AbstractMFlixDao {
       configuration.put(
           "wtimeout",
           this.mongoClient
-              .getDatabase("mflix")
+              .getDatabase(MFLIX_DATABASE)
               .getWriteConcern()
               .getWTimeout(TimeUnit.MILLISECONDS));
     }

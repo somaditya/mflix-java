@@ -75,7 +75,7 @@ public class UpdateCreateCommentTest extends TicketTest {
   }
 
   private MongoCollection commentsCollection() {
-    return this.mongoClient.getDatabase("mflix").getCollection(CommentDao.COMMENT_COLLECTION);
+    return this.mongoClient.getDatabase(databaseName).getCollection(CommentDao.COMMENT_COLLECTION);
   }
 
   @Test

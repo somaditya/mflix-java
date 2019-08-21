@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.ConnectionPoolingTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in mflix.api.daos.ConnectionPoolingTest
+testConnectionPoolSize(mflix.api.daos.ConnectionPoolingTest)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: Do not forget to set the maxPoolSize parameter in your spring.mongodb.uri key in the properties file
+	at mflix.api.daos.ConnectionPoolingTest.testConnectionPoolSize(ConnectionPoolingTest.java:21)
+

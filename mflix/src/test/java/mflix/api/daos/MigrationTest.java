@@ -20,7 +20,7 @@ public class MigrationTest extends TicketTest {
   @Before
   public void setup() throws IOException {
     String mongoUri = getProperty("spring.mongodb.uri");
-    movies = MongoClients.create(mongoUri).getDatabase("mflix").getCollection("movies");
+    movies = MongoClients.create(mongoUri).getDatabase("sample_mflix").getCollection("movies");
   }
 
   @Test

@@ -14,6 +14,8 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 @SpringBootTest(classes = {MongoDBConfiguration.class})
 @EnableConfigurationProperties
 @EnableAutoConfiguration
@@ -30,39 +32,48 @@ public class PagingTest extends TicketTest {
   @Before
   public void setup() {
     this.dao = new MovieDao(mongoClient, databaseName);
-    this.sortKey = "tomatoes.viwer.numReviews";
+    this.sortKey = "tomatoes.viewer.numReviews";
+
   }
 
   @Test
   public void testPagingByCast() {
-    String cast = "Tom Hanks";
+    String cast = "Michael Caine";
     int skip = 0;
     int countPage1 = 0;
-    for (Document d : dao.getMoviesByCast(sortKey, 20, skip, cast)) {
-      System.out.println(d);
-      countPage1++;
-    }
+    List<Document> movieDocs = dao.getMoviesByCast(sortKey, 20, skip, cast);
+    Assert.assertEquals(
+        "Expected `title` field does match: Please check your \" + \"getMoviesByCast() movies sort order.",
+        "The Dark Knight",
+        movieDocs.get(0).getString("title"));
+
+    countPage1 = movieDocs.size();
     Assert.assertEquals(
         "Check the query used in getMoviesByCast() in MoviesDao.java", 20, countPage1);
 
     int countPage2 = 0;
-    for (Document d : dao.getMoviesByCast(sortKey, 20, countPage1, cast)) {
-      System.out.println(d);
-      countPage2++;
-    }
+    movieDocs = dao.getMoviesByCast(sortKey, 20, countPage1, cast);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your \" + \"getMoviesByCast() movies sort order.",
+            "Educating Rita",
+            movieDocs.get(0).getString("title"));
+    countPage2 = movieDocs.size();
     Assert.assertEquals(
         "Incorrect count in page 2. Check your query implementation", 20, countPage2);
 
     int countPage3 = 0;
-    for (Document d : dao.getMoviesByCast(sortKey, 20, countPage1 + countPage2, cast)) {
-      System.out.println(d);
-      countPage3++;
-    }
+    movieDocs = dao.getMoviesByCast(sortKey, 20, countPage1 + countPage2, cast);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your \" + \"getMoviesByCast() movies sort order.",
+            "World War II: When Lions Roared",
+            movieDocs.get(0).getString("title"));
+    countPage3 = movieDocs.size();
 
-    Assert.assertEquals("Incorrect count in page 3", 11, countPage3);
+    Assert.assertEquals("Incorrect count in page 3", 13, countPage3);
 
     Assert.assertEquals(
-        "Total document count does not match", 51, countPage1 + countPage2 + countPage3);
+        "Total document count does not match", 53,
+            countPage1 + countPage2 + countPage3);
   }
 
   @Test
@@ -70,56 +81,75 @@ public class PagingTest extends TicketTest {
     String genre = "History";
     int skip = 0;
     int countPage1 = 0;
-    int expected = 1503;
-    for (Document d : dao.getMoviesByGenre(sortKey, 20, skip, genre)) {
-      System.out.println(d);
-      countPage1++;
-    }
+
+    List<Document> movieDocs = dao.getMoviesByGenre(sortKey, 20, skip, genre);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your \" + \"getMoviesByGenre() movies sort order.",
+            "Braveheart",
+            movieDocs.get(0).getString("title"));
+    countPage1 = movieDocs.size();
+    int expectedTotal = 999;
     Assert.assertEquals("Check the query used in () in MoviesDao.java", 20, countPage1);
 
     Assert.assertEquals(
         "Total document count does not match expected. Review " + "getGenreSearchCount()",
-        expected,
+            expectedTotal,
         dao.getGenresSearchCount(genre));
 
     // jump to last page
 
-    int lastPage = expected / 20;
+    int lastPage = expectedTotal / 20;
     skip = lastPage * 20;
     int countPageFinal = 0;
-    for (Document d : dao.getMoviesByGenre(sortKey, 20, skip, genre)) {
-      System.out.println(d);
-      countPageFinal++;
-    }
+    movieDocs = dao.getMoviesByGenre(sortKey, 20, skip, genre);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your " + "getMoviesByGenre() movies sort order.",
+            "Only the Dead",
+            movieDocs.get(0).getString("title"));
+    countPageFinal = movieDocs.size();
 
     Assert.assertEquals(
-        "Last page count does not match expected. Check dataset and getGenreSearchCount()",
-        1503 % 20,
+        "Last page count does not match expected. Check dataset and getGenreSearchCount()", expectedTotal % 20,
         countPageFinal);
   }
 
   @Test
   public void testPagingByText() {
     String keywords = "bank robbery";
+    int expectedCount = 475;
     int count = 0;
-    for (Document d : dao.getMoviesByText(20, 0, keywords)) {
-      System.out.println(d);
-      count++;
-    }
+    List<Document> movieDocs = dao.getMoviesByText(20, 0, keywords);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your \" + \"getMoviesByText() movies sort order.",
+            "The Bank",
+            movieDocs.get(0).getString("title"));
+
+    count = movieDocs.size();
     Assert.assertEquals("Check the query used in getMoviesByText() in MoviesDao.java", 20, count);
-    Assert.assertEquals("Check your count method", 1084L, dao.getTextSearchCount(keywords));
+    Assert.assertEquals("Check your count method", expectedCount,
+            dao.getTextSearchCount(keywords));
 
+  }
+
+  @Test
+  public void testPagingByTextAndSkip(){
+
+    String keywords = "magic";
     int limit = 20;
-    int skip = 1080;
+    int skip = 280;
+    int expectedCount = 296;
+    String expectedTitle = "Estomago: A Gastronomic Story";
     int finalCount = 0;
-    for (Document d : dao.getMoviesByText(limit, skip, keywords)) {
-      System.out.println(d);
-      finalCount++;
-    }
+    List<Document> movieDocs = dao.getMoviesByText(limit, skip, keywords);
+    Assert.assertEquals(
+            "Expected `title` field does match: Please check your \" + \"getMoviesByText() movies sort order.",
+            expectedTitle,
+            movieDocs.get(0).getString("title"));
+    finalCount = movieDocs.size();
 
-    Assert.assertEquals("Check your getMoviesByText method.", 4, finalCount);
+    Assert.assertEquals("Check your getMoviesByText method.", 16, finalCount);
 
     Assert.assertEquals(
-        "Check the query used in getMovies() in MoviesDao.java", 1084 % 20, finalCount);
+        "Check the query used in getMovies() in MoviesDao.java", expectedCount % 20, finalCount);
   }
 }
