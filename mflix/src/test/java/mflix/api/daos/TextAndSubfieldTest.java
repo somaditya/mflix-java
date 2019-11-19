@@ -118,6 +118,12 @@ public class TextAndSubfieldTest extends TicketTest {
         "Total count of movies with cast does not match. Check your query filter",
         expectedCount,
         dao.getCastSearchCount(cast.toArray(new String[0])));
+
+    Document movie = cursor.iterator().next();
+    Assert.assertEquals(
+            "Expected title does not match. Check your sort filter",
+            "Pretty Woman",
+            movie.getString("title"));
   }
 
   @Test

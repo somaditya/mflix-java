@@ -29,7 +29,7 @@ public class MongoClientLesson extends AbstractLesson {
 
   private MongoCollection<Document> collection;
 
-  private String uri = "mongodb+srv://m220student:m220password@mflix-htida.mongodb.net/test?retryWrites=true&w=majority";
+  private String uri = "<YOUR SRV STRING from the application.properties file>";
 
   private Document document;
 
