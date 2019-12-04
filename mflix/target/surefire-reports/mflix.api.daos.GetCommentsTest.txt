@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.GetCommentsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.598 s <<< FAILURE! - in mflix.api.daos.GetCommentsTest
+testGetMovieComments(mflix.api.daos.GetCommentsTest)  Time elapsed: 0.174 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.GetCommentsTest.testGetMovieComments(GetCommentsTest.java:72)
+
+testInsertedComment(mflix.api.daos.GetCommentsTest)  Time elapsed: 0.201 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.GetCommentsTest.testInsertedComment(GetCommentsTest.java:96)
+

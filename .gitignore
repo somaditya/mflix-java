@@ -1,2 +1,4 @@
 mflix/data
 *.gz
+.DS_Store
+.idea

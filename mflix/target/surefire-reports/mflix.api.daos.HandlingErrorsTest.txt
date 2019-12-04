@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.HandlingErrorsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.249 s <<< FAILURE! - in mflix.api.daos.HandlingErrorsTest
+testNoUserDups(mflix.api.daos.HandlingErrorsTest)  Time elapsed: 0.137 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<mflix.api.daos.IncorrectDaoOperation> but was<com.mongodb.MongoWriteException>
+	at mflix.api.daos.HandlingErrorsTest.testNoUserDups(HandlingErrorsTest.java:58)
+
