@@ -1,16 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.FacetedSearchTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 25.871 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
-testRatingRuntimeBuckets(mflix.api.daos.FacetedSearchTest)  Time elapsed: 1.022 s  <<< ERROR!
-java.lang.NullPointerException
-	at mflix.api.daos.FacetedSearchTest.testRatingRuntimeBuckets(FacetedSearchTest.java:49)
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 47.26 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
+testRatingRuntimeBuckets(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.151 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
 
-testFacetedSearchPaging(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.166 s  <<< FAILURE!
-java.lang.AssertionError: Should return a list of one faceted document expected:<1> but was:<44>
-	at mflix.api.daos.FacetedSearchTest.testFacetedSearchPaging(FacetedSearchTest.java:71)
+testFacetedSearchPaging(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
 
-testFacetedMultipleCast(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.164 s  <<< FAILURE!
-java.lang.AssertionError: Should return a list of one faceted document expected:<1> but was:<56>
-	at mflix.api.daos.FacetedSearchTest.testFacetedMultipleCast(FacetedSearchTest.java:99)
+testFacetedMultipleCast(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
 

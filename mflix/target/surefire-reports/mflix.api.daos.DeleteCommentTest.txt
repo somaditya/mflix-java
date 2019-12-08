@@ -1,11 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.DeleteCommentTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.704 s <<< FAILURE! - in mflix.api.daos.DeleteCommentTest
-testDeleteInvalidCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.138 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 75.312 s <<< FAILURE! - in mflix.api.daos.DeleteCommentTest
+testDeleteInvalidCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
 
-testDeleteOfOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0.133 s  <<< FAILURE!
-java.lang.AssertionError: Should be able to delete owns comments: Check your deleteComment() method
-	at mflix.api.daos.DeleteCommentTest.testDeleteOfOwnedComment(DeleteCommentTest.java:57)
+testDeleteIncorrectCommentId(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
+
+testDeleteOfOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
+
+testDeleteNotOwnedComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
+
+testDeleteNonExistingComment(mflix.api.daos.DeleteCommentTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: org.springframework.boot.logging.DeferredLog.switchTo(Ljava/lang/Class;)V
 
