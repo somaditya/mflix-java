@@ -3,8 +3,11 @@ package mflix.api.daos;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.InsertOneOptions;
+import com.mongodb.client.model.UpdateOptions;
 import mflix.api.models.Session;
 import mflix.api.models.User;
+import org.bson.BsonDocument;
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
@@ -16,6 +19,8 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Map;
 
+import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Updates.set;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
@@ -25,7 +30,7 @@ public class UserDao extends AbstractMFlixDao {
   private final MongoCollection<User> usersCollection;
   //TODO> Ticket: User Management - do the necessary changes so that the sessions collection
   //returns a Session object
-  private final MongoCollection<Document> sessionsCollection;
+  private final MongoCollection<Session> sessionsCollection;
 
   private final Logger log;
 
@@ -42,7 +47,7 @@ public class UserDao extends AbstractMFlixDao {
     log = LoggerFactory.getLogger(this.getClass());
     //TODO> Ticket: User Management - implement the necessary changes so that the sessions
     // collection returns a Session objects instead of Document objects.
-    sessionsCollection = db.getCollection("sessions");
+    sessionsCollection = db.getCollection("sessions", Session.class).withCodecRegistry(pojoCodecRegistry);
   }
 
   /**
@@ -70,11 +75,18 @@ public class UserDao extends AbstractMFlixDao {
   public boolean createUserSession(String userId, String jwt) {
     //TODO> Ticket: User Management - implement the method that allows session information to be
     // stored in it's designated collection.
-    Document sessionDoc = new Document();
-    sessionDoc.put("user_id", userId);
-    sessionDoc.put("jwt", jwt);
+    Session session = new Session();
+    session.setUserId(userId);
+    session.setJwt(jwt);
 
-    sessionsCollection.insertOne(sessionDoc);
+    Document queryFilter = new Document();
+    queryFilter.put("user_id", userId);
+
+    if (sessionsCollection.find(queryFilter).iterator().hasNext()) {
+      deleteUserSessions(userId);
+    }
+
+    sessionsCollection.insertOne(session);
     return true;
     //TODO > Ticket: Handling Errors - implement a safeguard against
     // creating a session with the same jwt token.
@@ -106,12 +118,10 @@ public class UserDao extends AbstractMFlixDao {
     Session session = new Session();
 
     Document queryFilter = new Document("user_id", userId);
-    Document sessionDoc = new Document();
-
-    sessionDoc = sessionsCollection.find(queryFilter).iterator().tryNext();
+    session = sessionsCollection.find(queryFilter).first();
 
     return session;
-  }
+    }
 
   public boolean deleteUserSessions(String userId) {
     //TODO> Ticket: User Management - implement the delete user sessions method
@@ -135,6 +145,7 @@ public class UserDao extends AbstractMFlixDao {
     //TODO > Ticket: Handling Errors - make this method more robust by
     // handling potential exceptions.
     Document queryFilter = new Document();
+    queryFilter.put("email", email);
 
     usersCollection.deleteOne(queryFilter);
     deleteUserSessions(email);
@@ -155,7 +166,22 @@ public class UserDao extends AbstractMFlixDao {
     // be updated.
     //TODO > Ticket: Handling Errors - make this method more robust by
     // handling potential exceptions when updating an entry.
-    
-    return false;
+
+    Document queryFilter = new Document("email", email);
+    Document userPref = new Document();
+
+      if (userPreferences == null || userPreferences.isEmpty()) {
+        throw new IncorrectDaoOperation("Preferences can not be empty or null.", new Throwable());
+      }
+
+      for (String key : userPreferences.keySet()) {
+        userPref.put(key, userPreferences.get(key).toString());
+      }
+
+      usersCollection.updateOne(eq("email", email), set("preferences", userPref),
+              new UpdateOptions().upsert(true));
+
+
+    return true;
   }
 }
