@@ -3,12 +3,10 @@ package mflix.api.daos;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.MongoWriteException;
 import com.mongodb.ReadConcern;
+import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.model.Aggregates;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.Sorts;
-import com.mongodb.client.model.Updates;
+import com.mongodb.client.model.*;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
 import mflix.api.models.Comment;
@@ -26,11 +24,11 @@ import org.springframework.stereotype.Component;
 
 import javax.print.Doc;
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
+import static com.mongodb.client.model.Accumulators.sum;
+import static com.mongodb.client.model.Aggregates.*;
+import static com.mongodb.client.model.Sorts.descending;
 import static com.mongodb.client.model.Updates.set;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
@@ -140,7 +138,7 @@ public class CommentDao extends AbstractMFlixDao {
         // TIP: make sure to match only users that own the given commentId
         if (commentId.length() == 0) throw new IllegalArgumentException("commentId and email are both required.");
         if (email.length() == 0) return false;
-    
+        
         Document query = new Document("_id", new ObjectId(commentId));
         
         Comment comment = commentCollection.find(query).first();
@@ -169,6 +167,19 @@ public class CommentDao extends AbstractMFlixDao {
         // // guarantee for the returned documents. Once a commenter is in the
         // // top 20 of users, they become a Critic, so mostActive is composed of
         // // Critic objects.
+        List<Bson> pipeline = new ArrayList<>();
+        
+        pipeline.addAll(Arrays.asList(group("$email", sum("count", 1L)),
+                sort(descending("count")),
+                limit(20)));
+        
+        MongoCollection<Critic> criticCollection = db.getCollection(COMMENT_COLLECTION, Critic.class)
+                .withCodecRegistry(pojoCodecRegistry).withReadConcern(ReadConcern.MAJORITY);
+    
+        for (Critic critic : criticCollection.aggregate(pipeline)) {
+            mostActive.add(critic);
+        }
+        
         return mostActive;
     }
 }

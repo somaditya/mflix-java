@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.PagingTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.902 s <<< FAILURE! - in mflix.api.daos.PagingTest
+testPagingByGenre(mflix.api.daos.PagingTest)  Time elapsed: 0.268 s  <<< FAILURE!
+org.junit.ComparisonFailure: Expected `title` field does match: Please check your getMoviesByGenre() movies sort order. expected:<[Only the Dead]> but was:<[Ambition]>
+	at mflix.api.daos.PagingTest.testPagingByGenre(PagingTest.java:105)
+

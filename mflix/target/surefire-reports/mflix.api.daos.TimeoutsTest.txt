@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.TimeoutsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.309 s - in mflix.api.daos.TimeoutsTest

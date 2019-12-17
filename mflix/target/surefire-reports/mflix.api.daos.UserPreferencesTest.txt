@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.UserPreferencesTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.665 s - in mflix.api.daos.UserPreferencesTest

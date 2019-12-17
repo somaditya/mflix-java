@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.UserTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.564 s <<< FAILURE! - in mflix.api.daos.UserTest
+testLogin(mflix.api.daos.UserTest)  Time elapsed: 0.325 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.UserTest.testLogin(UserTest.java:78)
+
+testRegisterUser(mflix.api.daos.UserTest)  Time elapsed: 0.325 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.UserTest.testRegisterUser(UserTest.java:68)
+
+testDeleteUser(mflix.api.daos.UserTest)  Time elapsed: 0.314 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.UserTest.testDeleteUser(UserTest.java:106)
+
